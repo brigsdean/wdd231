@@ -1,11 +1,55 @@
-<!DOCTYPE html>
-<html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
-</head>
-<body>
-    
-</body>
+<!doctype html>
+<html lang="en-US">
+    <head>
+        <link rel="stylesheet" href="styles/base.css">
+        <link rel="preconnect" href="https://fonts.googleapis.com">
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link href="https://fonts.googleapis.com/css2?family=Kanit&family=Rajdhani&display=swap" rel="stylesheet">
+        <script src="scripts/getdates.js" defer></script>
+        <meta charset="utf-8">
+        <meta name="viewport" content="width=device-width">
+        <meta name="description" content="Brigs Dean WDD 131 - Dynamic Web Fundamentals Home Page">
+        <meta name="author" content="Brigs Dean">
+        <title>WDD 131 - Dynamic Web Fundamentals - Brigs Dean</title>
+    </head>
+    <body>
+        <header>
+            <h1>WDD 131: Dynamic Web Fundamentals - Brigs Dean</h1>
+            <nav>
+                <a href="https://www.linkedin.com/">LinkedIn</a>
+                <a href="https://byui.instructure.com/">I-Learn</a>
+                <a href="https://www.churchofjesuschrist.org/study/scriptures/ot/isa/41?lang=eng&id=p10#p10">Scripture</a>
+            </nav>
+        </header>
+        <div class="grid">
+            <main>
+                <section class="card">
+                    <h2>About Me</h2>
+                    <img src="images/profile.jpg" alt="pic of me" width="150">
+                    <p>my name is Brigs Dean</p>
+                    <div class="state">
+                        <h3>Alaska, United States</h3>
+                        <figure>
+                            <img src="images/Alaskaflg.png" alt="Alaska" width="300">
+                            <figcaption>Alaskan flag</figcaption>
+                        </figure>
+                        <p>Alaska Is the largest US state by size Its also to most northern, western and eastern state. Alaska was purchased from Russia on march 30th 1867 and made into a state in 1959.</p>
+                    </div>
+                </section>
+                <section class="card">
+                    <h2>Web Dev Resources</h2>
+                    <ul>
+                        <li><a href="https://picsum.photos/">Lorem Picsum Images</a></li>
+                        <li><a href="https://coolors.co/generate">Color Palette Generator</a></li>
+                        <li><a href="https://webaim.org/resources/contrastchecker/">Color Contrast Checker</a></li>
+                        <li><a href="https://imageresizer.com/">Image Resizer</a></li>
+                    </ul>
+                </section>
+            </main>
+        </div>
+        <footer>
+            <p>©<span id="currentyear"></span> Brigs Dean Alaska</p>
+            <p>Last Modified: <span id="lastModified"></span></p>
+        </footer>
+    </body>
 </html>
