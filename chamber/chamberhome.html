@@ -5,5 +5,53 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta name="author" content="Brigs Dean">
-    <meta name="description" content="BYU-I WDD231 Course Project | CoC Directory Page">
+    <meta name="description" content="first assignment of the WDD231">
+    <meta property="og:title" content="Chamber Index">
+    <meta property="og:type" content="website">
+    <meta property="og:image" content="images/IMG_68B6F5EB3A8B-1.jpeg">
+    <meta property="og:url" content="https://brigsdean.github.io/wdd231/chamber/chamberhome.html">
+    <title>Weather API & JSON Display</title>
+    <link rel="stylesheet" href="styles/index.css">
+</head>
 
+<body>
+    <header>
+        <h1>Chamber of Commerce</h1>
+        <nav id="main-nav">
+            <ul>
+                <li><a href="#home"> Home</a></li>
+                <li><a href="#discover">Discover</a></li>
+                <li><a href="#directory.html">Directory</a></li>
+                <li><a href="#join">Join</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <main>
+        <section id="current-weather">
+            <h2>Current Weather in Palmer, Alaska</h2>
+            <p>The current temperature is <span id="current-temp"></span></p>
+            <figure>
+                <img id="weather-icon" src="images/default-icon.png" alt="Weather Icon">
+                <figcaption id="weather-desc"></figcaption>
+            </figure>
+        </section>
+
+        <section id="forecast">
+            <h2>3-Day Weather Forecast</h2>
+            <div id="forecast-temp"></div>
+        </section>
+
+        <section id="members-list">
+            <h2>Membership 3 Members</h2>
+            <ul id="members"></ul>
+        </section>
+    </main>
+
+    <footer>
+        <p>&copy;<span id="currentyear"></span> Brigs Dean</p>
+        <p id="lastModified">Last Modified: </p>
+    <script src="scripts/index.js" defer></script>
+</body>
+
+</html>
