@@ -1,113 +1,89 @@
 <!DOCTYPE html>
 <html lang="en">
-  <head>
-    <meta charset="UTF-8" >
+
+<head>
+    <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Brigs Dean - WDD 231 - Web Frontend 1</title>
-    <meta
-      name="description"
-      content="WDD 231 - Web Frontend 1. 
-    />
-    <meta name="author" content="Brigs Dean">
-    <meta
-      property="og:title"
-      content="Brigs Dean - WDD231 - Web Frontend 1"
-    />
-    <meta property="og:type" content="website">
-    <meta
-      property="og:image"
-      content="https://pbs.twimg.com/media/DTsoG8_XUAEzZhB?format=webp&name=small">
-    <meta property="og:url" content="koigor97.github.io/wdd230/index.html">
-    <link rel="icon" href="favicon.ico" />
-    <link rel="preconnect" href="https://fonts.googleapis.com" />
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
-    <link
-      href="https://fonts.googleapis.com/css2?family=Roboto+Mono:ital,wght@0,100..700;1,100..700&display=swap"
-      rel="stylesheet"
-    />
-    <link rel="stylesheet" href="styles/normalize.css" />
-    <link rel="stylesheet" href="styles/base.css" />
-    <link rel="stylesheet" href="styles/larger.css" />
-    <script src="scripts/script.js" defer></script>
-  </head>
+    <meta name="author" content="Jack Eckersley">
+    <meta name="description" content="This is for my first assignment of the WDD231">
+    <!--  Essential META Tags -->
+    <meta property="og:title" content="jj-frenzy-770b29284">
+    <meta property="og:type" content="article" />
+    <meta property="og:image" content="https://static.wikia.nocookie.net/sonic/images/f/fe/Wisp_Purple.png/revision/latest?cb=20110513170335">
+    <meta property="og:url" content="https://jjfrenzy.github.io/wdd231/">
+    <!--  Non-Essential, But Recommended -->
+    <meta property="og:description" content="JJFRENZY Index Page.">
+    <meta property="og:site_name" content="JJFRENZY Index.">
+    <meta name="twitter:image:alt" content="Alt text for image">
+    <!--  Non-Essential, But Required for Analytics -->
+    <meta property="fb:app_id" content="JJFRENZY" />
+    <meta name="twitter:site" content="@JJFRENZY">
+    <title>WDD231 - Course Home Page - Jack Eckersley</title>
 
-  <body>
-    <div>
-      <header>
-        <div class="img-box">
-          <img
-            src="images/profile.jpg"
-            alt="Pic of me"
-            title="Brigs Dean"
-            width="500"
-            height="350"
-            loading="lazy"
-          />
-        </div>
-        <h1>Brigs Dean</h1>
-      </header>
+    <!-- Preconnect to Google Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
 
-      <nav>
-        <button id="menu"></button>
-        <ul class="navigation">
-          <li>
-            <a href="#" target="_blank">Home</a>
-          </li>
-          <li>
-            <a
-              href="https://github.com/brigsdean/wdd231/tree/main/chamber"
-              target="_blank"
-            >
-              Chamber
-            </a>
-          </li>
-          <li>
-            <a href="https://github.com/brigsdean" target="_blank">GitHub</a>
-          </li>
-          <li>
-            <a
-              href="https://www.linkedin.com/"
-              target="_blank"
-            >
-              LinkedIn
-            </a>
-          </li>
+    <!-- Google Fonts Embed -->
+    <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@400;700&display=swap" rel="stylesheet">
+
+    <!-- Link to external CSS file -->
+    <link rel="stylesheet" href="styles/index.css">
+
+    <!-- Link to external ico file -->
+    <link rel="icon" href="images/favicon.ico">
+
+</head>
+
+<body>
+    <header>
+        <h1>Jack Eckersley</h1>
+    </header>
+
+    <nav>
+        <ul>
+            <li><a href="https://www.linkedin.com/in/jj-frenzy-770b29284/">LinkedIn</a></li>
+            <li><a href="https://byui.instructure.com/profile">Home</a></li>
+            <li><a href="https://www.churchofjesuschrist.org/study/scriptures">Chamber</a></li>
+            <li><a href="https://github.com/jack-eckersley">GitHub Profile</a></li>
         </ul>
-      </nav>
-    </div>
+    </nav>
 
     <main>
-
-
-        <section class="country-info-box">
-          <h3>Palmer AK</h3>
-          <div class="country-info">
-            <div class="country-img-box">
-              <img
-                src="images/Alaskaflg.png"
-                alt="Alaska Flag"
-                title="Alaska flag"
-                width="497"
-                height="350"
-                loading="lazy"
-              />
-            </div>
-          </div>
-          <p>AK flag</p>
+        <section class="main-content">
+            <h2>About Me</h2>
+            <p>I am a 22 year old republican just trying his best to understand one of the most confusing programs ever invented. I like playing video games, YuGiOh, and listening to music.</p>
         </section>
-      </section>
+
+        <section class="main-content">
+            <h2>This Is Me (not really(but really))</h2>
+            <p><img src="images/IMG_68B6F5EB3A8B-1.jpeg" alt="Custom Picture" width="500"></p>
+        </section>
+
+        <section class="course-list">
+            <!-- Dynamic course content will go here -->
+        </section>
+
+        <div class="filter-buttons">
+            <button id="all-btn">Show All Courses</button>
+            <button id="cse-btn">Show CSE Courses</button>
+            <button id="wdd-btn">Show WDD Courses</button>
+        </div>
+        <dialog id="course-details"></dialog>
+
+        <aside>
+            <h2>Aside Section</h2>
+            <p>This is the aside section.</p>
+        </aside>
     </main>
 
     <footer>
-      <p>
-        &copy;
-        <span id="year"></span>
-        Brigs Dean Palmer Alaska
-      </p>
-      <p>
-        Last Modification:
-        <span id="lastModified"></span>
-      </p>
+        <p>&copy;<span id="currentyear"></span> Jack Eckersley. Draper Utah</p>
+        <p id="lastModified">Last Modified: </p>
     </footer>
-  </body>
+
+    <!-- Link to external JavaScript file -->
+    <script src="scripts/directory.js" defer></script>
+</body>
+
 </html>
