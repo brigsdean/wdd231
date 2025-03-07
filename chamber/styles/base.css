@@ -1,9 +1,0 @@
-// responsive coding for the menu
-
-
-// hamburger button when in mobile view
-
-hamButton.addEventListener('click', () => {
-    navigation.classList.toggle('open');
-    hamButton.classList.toggle('open');
-});
