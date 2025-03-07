@@ -1,96 +1,124 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
+    <!-- CSS -->
+    <link rel="stylesheet" href="styles/normalize.css"> <!-- Include before any other CSS reference -->
+    <link rel="stylesheet" href="styles/index.css">
+
+    <!-- JS -->
+    <script src="scripts/menu.js" defer></script> <!-- responsive nav menu -->
+    <script src="scripts/getdates.js" defer></script> <!-- Last modified, current year for &copy in footer -->
+    <script src="scripts/certificate-courses.js" defer></script>
+    <!-- certificate courses array and responsive design -->
+
+    <!-- fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Quicksand&family=Silkscreen&display=swap" rel="stylesheet">
+
+    <!-- meta -->
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta property="og:title" content="Samuel M|WDD231" >
-    <meta property="og:type" content="website" >
-    <meta property="og:image" content="https://ibb.co/LnQ7tfc">
-    <meta property="og:url"  content="https://sam-mercado.github.io/wdd231/">
-    <title>Samuel M|WDD231</title>
-    <link rel="stylesheet" href="styles/home.css">
-    <!-- <link rel="stylesheet" href="styles/normalize.css"> -->
-    <script src="scripts/home.js"  defer></script>
+    <meta name="author" content="Kathleen Rivera">
+    <meta name="description"
+        content="Home page for Kathleen Rivera's course website, created for BYU-I's course, WDD231.">
+
+    <!-- Social Media meta tags-->
+    <meta property="og:title" content="WDD231 Homepage | Kathleen Rivera">
+    <meta property="og:type" content="website">
+    <meta property="og:description"
+        content="Home page for Kathleen Rivera's course website, created for BYU-I's course, WDD231.">
+    <meta property="og:image" content="https://kvrivera.github.io/wdd231/images/ontario.webp">
+    <meta property="og:url" content="https://kvrivera.github.io/wdd231/index">
+    <meta name="twitter:card" content="summary">
+
+    <!-- title of webpage -->
+    <title>WDD231 Homepage | Kathleen Rivera</title>
+
+    <!-- favicon -->
+    <link rel="icon" href="favicon.ico">
 </head>
+
 <body>
     <header>
-        <div class="image-title">
-            <img class="profile-pic" src="images/photo-to-upload.jpg" alt="photo">
-            <h1>Samuel F. Mercado Perez</h1>
+        <div class="page-banner">
+            <img src="images/profile.webp" alt="Profile photo of Kathleen.">
+            <h1>
+                Kathleen Rivera
+            </h1>
+            <button id="hamburger" aria-label="menu-button"></button>
         </div>
-        <nav>
-            <button id="myButton">&#9776;</button>
-            <ul class="menuLinks">
-                <li><a href="index.html">Home</a></li>
-                <li><a href="chamber/directory.html" target="_blank">Chamber</a></li>
-                <li><a href="https://github.com/Sam-Mercado" target="_blank">GitHub Profile</a></li>
-                <li><a href="https://www.linkedin.com/in/samuel-mercado-perez-12224b22b/" target="_blank">LinkedIn</a></li>
+
+
+        <nav id="animateme">
+            <ul id="main-menu">
+                <li>
+                    <a href="index.html" class="active">Home</a>
+                </li>
+                <li>
+                    <a href="chamber.html">Chamber</a>
+                </li>
+                <li>
+                    <a href="github-profile.html">GitHub Profile</a>
+                </li>
+                <li>
+                    <a href="https://www.linkedin.com/in/katrivera/">LinkedIn</a>
+                </li>
             </ul>
         </nav>
     </header>
 
     <main>
-        <section>
-            <div class="box-title">
-                <h2>Course Work</h2>
-            </div>
-            <div class="card-content">
+        <section class="course-work">
+            <h2>Course Work</h2>
+            <div>
                 <ul>
-                    <li><a href="EnglishInstitute/index.html">Final Project</a></li>
-                    <li></li>
-                    <li></li>
+                    <li>
+                        <a href="prophets.html">Week 02 Prophets Assignment</a>
+                    </li>
+                    <li>
+                        <a href="weather-activity.html">Week 03 Weather Activity API</a>
+                    </li>
+                    <li>
+                        Content
+                    </li>
                 </ul>
             </div>
         </section>
+        <section class="place">
+            <h2>Ontario, Canada</h2>
+            <figure>
+                <img src="images/ontario.webp"
+                    alt="An image Kathleen took of a beautiful watered landscape in Ontario, Canada." width="400">
+                <figcaption>The beautiful watered landscape of Ontario. Photo taken by Kathleen Rivera.</figcaption>
+            </figure>
 
-        <section>
-            <div class="box-title">
-                <h2>Sucre, Bolivia</h2>
-                
-            </div>
-            <div class="card-content card-img">
-                <img src="images/sucre.jpg" alt="sucre City Bolivia Chuquisaca">
-                <div class="text-flagBox">
-                    <p>Sucre, Bolivia</p>
-                    <div class="bolivianflag">
-                        <div class="red"></div>
-                        <div class="yellow"></div>
-                        <div class="green"></div>
-                    </div>
-                </div>
-            </div>
         </section>
-        <section class="certificate-content">
-            <div class="box-title">
-                <h2>Web Computer Programming Certificate</h2>
+        <section class="certificate">
+            <h2>Web and Computer Programming Certificate</h2>
+            <p id="num-credits">Total Number of Credits: </p>
+            <div class="certificate-buttons">
+                <button id="all">ALL</button>
+                <button id="cse">CSE</button>
+                <button id="wdd">WDD</button>
             </div>
-            <div class="card-content">
-                <div class="filter-buttons">
-                    <button data-filter="ALL">All</button>
-                    <button data-filter="CSE">CSE</button>
-                    <button data-filter="WDD">WDD</button>
-                </div>
-                <div class="line"></div>
-
-                <div class="courses">     
-
-                </div>
-                <!-- dialog -->
-                <dialog id="mydialog">
-                    <div>
-                      <h2>Sample Title</h2>
-                      <button>X</button>
-                    </div>
-                    <p></p>
-                  </dialog>
+            <div class="course-cards">
+                <!-- Where the course cards will be updated dynamically by JS -->
             </div>
         </section>
     </main>
-
     <footer>
-        <p id="year"></p>
+        <p>
+            &copy;
+            <span id="currentyear"></span>
+            Kathleen Rivera | Canada
+        </p>
+        <p id="lastModified">
+
+        </p>
     </footer>
-    
+
 </body>
+
 </html>
