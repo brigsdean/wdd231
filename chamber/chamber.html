@@ -5,53 +5,131 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta name="author" content="Brigs Dean">
-    <meta name="description" content="first assignment of the WDD231">
-    <meta property="og:title" content="Chamber Index">
+    <meta name="description" content="BYU-I WDD231 Course Project | CoC Directory Page">
+
+    <!-- CSS -->
+    <link rel="stylesheet" href="styles/normalize.css">
+    <link rel="stylesheet" href="styles/base.css">
+
+    <!-- JS -->
+    <script src="scripts/menu.js" defer></script> <!-- responsive nav menu -->
+    <script src="scripts/weather.js" defer></script> <!-- weather API -->
+    <script src="scripts/spotlight.js" defer></script>
+    <script src="scripts/getdates.js" defer></script> <!-- Last modified, current year for &copy in footer -->
+
+    <!-- Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Lato:ital,wght@0,300;1,300&family=Passion+One&display=swap"
+        rel="stylesheet">
+
+    <!-- Social Media meta tags-->
+    <meta property="og:title" content="Woodstock Chamber of Commerce and Industry | Home">
     <meta property="og:type" content="website">
-    <meta property="og:image" content="images/IMG_68B6F5EB3A8B-1.jpeg">
-    <meta property="og:url" content="https://brigsdean.github.io/wdd231/chamber/index.html">
-    <title>Weather API & JSON Display</title>
-    <link rel="stylesheet" href="styles/index.css">
+    <meta property="og:description" content="Welcome to Woodstock's Chamber of Commerce and Industry.">
+    <meta property="og:image"
+        content="https://img.evbuc.com/https%3A%2F%2Fcdn.evbuc.com%2Fimages%2F602717509%2F216769764468%2F1%2Foriginal.20230920-202730?w=512&auto=format%2Ccompress&q=75&sharp=10&rect=0%2C0%2C1080%2C1080&s=d04a3b4b2b7a0d9b17ea893833ace788">
+    <meta property="og:url" content="https://kvrivera.github.io/wdd231/chamber/index.html">
+    <meta name="twitter:card" content="summary">
+
+    <!-- Site Page Title -->
+    <title>Chamber of Commerce | Home</title>
+
+    <!-- favicon -->
+    <link rel="icon" href="favicon.ico">
 </head>
 
 <body>
     <header>
-        <h1>Chamber of Commerce</h1>
-        <nav id="main-nav">
-            <ul>
-                <li><a href="#home"> Home</a></li>
-                <li><a href="#discover">Discover</a></li>
-                <li><a href="#directory.html">Directory</a></li>
-                <li><a href="#join">Join</a></li>
+        <div class="page-banner">
+            <img src="images/logo.webp" width="300"
+                alt="Palmer chamber of commerce logo.">
+            <h1>
+                Palmer chamber of commerce
+            </h1>
+            <button id="hamburger" aria-label="open nav"></button>
+        </div>
+
+
+        <nav id="animateme">
+            <ul id="main-menu">
+                <li>
+                    <a href="index.html" class="active">Home</a>
+                </li>
+                <li>
+                    <a href="directory.html">Directory</a>
+                </li>
+                <li>
+                    <a href="join.html">Join</a>
+                </li>
+                <li>
+                    <a href="discover.html">Discover</a>
+                </li>
             </ul>
         </nav>
     </header>
-
     <main>
-        <section id="current-weather">
-            <h2>Current Weather in Palmer, Alaska</h2>
-            <p>The current temperature is <span id="current-temp"></span></p>
-            <figure>
-                <img id="weather-icon" src="images/default-icon.png" alt="Weather Icon">
-                <figcaption id="weather-desc"></figcaption>
-            </figure>
-        </section>
+        <div class="hero">
+            <img src="images/hero.webp"
+                alt="Members of the WCCI, cheering themselves on for their latest community achievement.">
+            <a href="join.html" class="join-button">Join The WACCI</a>
+        </div>
+        <h2 class="info-panel-heading">Welcome to WACCI</h2>
+        <div class="info-panel-flexbox">
+            <div class="current-events">
+                <h3>
+                    Current Events
+                </h3>
+                <div>
 
-        <section id="forecast">
-            <h2>3-Day Weather Forecast</h2>
-            <div id="forecast-temp"></div>
-        </section>
+                </div>
+            </div>
+            <div class="current-weather">
+                <h3>
+                    Current Weather
+                </h3>
+                <div>
+                    <p>The current temperature in Palmer Alaska is <span id="current-temp"></span>
+                    </p>
+                    <figure id="current-weather-icon">
 
-        <section id="members-list">
-            <h2>Membership 3 Members</h2>
-            <ul id="members"></ul>
-        </section>
+                    </figure>
+                </div>
+            </div>
+        </div>
+        <div class="spotlight-container">
+            <h2>Member Spotlight</h2>
+            <div id="spotlight">
+
+            </div>
+        </div>
+
     </main>
-
     <footer>
-        <p>&copy;<span id="currentyear"></span> Brigs Dean</p>
-        <p id="lastModified">Last Modified: </p>
-    <script src="scripts/index.js" defer></script>
+        <div class="footer-flexbox">
+            <p class="footer-address">
+                Woodstock Area Chamber of Commerce and Industry
+                <br> 832 S Colony Way
+                <br> Palmer Alaska
+                <br> (907) 745-2880
+            </p>
+            <p id="social-media-icons">
+                <img src="images/fb.png" width="50" alt="Facebook icon" loading="lazy">
+                <img src="images/twitter.png" width="50" alt="Twitter icon" loading="lazy">
+                <img src="images/instagram.png" width="50" alt="Instagram icon" loading="lazy">
+            </p>
+            <p id="lastModified">
+                WDD231 Course Project
+                <br> Brigs Dean
+                <br> &copy;
+                <span id="currentyear"></span> Palmer Alaska Chamber of Commerce and Industry
+                <br>
+
+            </p>
+        </div>
+
+    </footer>
 </body>
+
 
 </html>
