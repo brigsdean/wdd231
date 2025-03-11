@@ -1,13 +1,13 @@
-@import url('https://fonts.googleapis.com/css2?family=Quicksand&family=Silkscreen&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100..900;1,100..900&display=swap');
 
 :root {
     --background-color: #e8eedd;
     --header-font: "Silkscreen";
-    --header-font-color: #611c35;
+    --header-font-color: #353b3c;
     --main-font: "Quicksand";
-    --main-font-color: #2e5077;
-    --nav-menu-background: #ffa630;
-    --border-color: #611c35;
+    --main-font-color: #004e89;
+    --nav-menu-background: #ff6b35;
+    --border-color: #353b3c;
     --special-background-color: #84dae2;
     --special-background-font-color: #fff;
 }
