@@ -2,15 +2,11 @@
 <html lang="en">
 
 <head>
-    <!-- CSS -->
     <link rel="stylesheet" href="styles/normalize.css"> <!-- Include before any other CSS reference -->
     <link rel="stylesheet" href="styles/index.css">
 
     <!-- JS -->
-    <script src="scripts/menu.js" defer></script> <!-- responsive nav menu -->
     <script src="scripts/getdates.js" defer></script> <!-- Last modified, current year for &copy in footer -->
-    <script src="scripts/certificate-courses.js" defer></script>
-    <!-- certificate courses array and responsive design -->
 
     <!-- fonts -->
     <link rel="preconnect" href="https://fonts.googleapis.com">
@@ -20,21 +16,19 @@
     <!-- meta -->
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <meta name="author" content="Kathleen Rivera">
+    <meta name="author" content="Brigs Dean">
     <meta name="description"
-        content="Home page for Kathleen Rivera's course website, created for BYU-I's course, WDD231.">
+        content="Brigs Dean's home page for WDD231.">
 
     <!-- Social Media meta tags-->
-    <meta property="og:title" content="WDD231 Homepage | Kathleen Rivera">
+    <meta property="og:title" content="WDD231 Homepage | Brigs Dean">
     <meta property="og:type" content="website">
     <meta property="og:description"
-        content="Home page for Kathleen Rivera's course website, created for BYU-I's course, WDD231.">
-    <meta property="og:image" content="https://kvrivera.github.io/wdd231/images/ontario.webp">
-    <meta property="og:url" content="https://kvrivera.github.io/wdd231/index">
-    <meta name="twitter:card" content="summary">
+        content="Brigs Dean's Home page for BYU-I's course, WDD231.">
+    <meta property="og:url" content="https://brigsdean.github.io/wdd231/index">
 
     <!-- title of webpage -->
-    <title>WDD231 Homepage | Kathleen Rivera</title>
+    <title>WDD231 Homepage | Brigs Dean</title>
 
     <!-- favicon -->
     <link rel="icon" href="favicon.ico">
@@ -43,9 +37,9 @@
 <body>
     <header>
         <div class="page-banner">
-            <img src="images/profile.webp" alt="Profile photo of Kathleen.">
+            <img src="images/profile.jpg" alt="Profile photo of Brigs.">
             <h1>
-                Kathleen Rivera
+                WDD231 Homepage | Brigs Dean
             </h1>
             <button id="hamburger" aria-label="menu-button"></button>
         </div>
@@ -57,13 +51,13 @@
                     <a href="index.html" class="active">Home</a>
                 </li>
                 <li>
-                    <a href="chamber.html">Chamber</a>
+                    <a href="chamber/chamber.html">Chamber</a>
                 </li>
                 <li>
                     <a href="github-profile.html">GitHub Profile</a>
                 </li>
                 <li>
-                    <a href="https://www.linkedin.com/in/katrivera/">LinkedIn</a>
+                    <a href="https://www.linkedin.com/in/brigsdean/">LinkedIn</a>
                 </li>
             </ul>
         </nav>
@@ -75,10 +69,10 @@
             <div>
                 <ul>
                     <li>
-                        <a href="prophets.html">Week 02 Prophets Assignment</a>
+                        <a href="index.html">Week 02 to be done</a>
                     </li>
                     <li>
-                        <a href="weather-activity.html">Week 03 Weather Activity API</a>
+                        <a href="index.html">Week 03 to be done</a>
                     </li>
                     <li>
                         Content
@@ -87,32 +81,20 @@
             </div>
         </section>
         <section class="place">
-            <h2>Ontario, Canada</h2>
+            <h2>Anhorage, Alaska</h2>
             <figure>
-                <img src="images/ontario.webp"
-                    alt="An image Kathleen took of a beautiful watered landscape in Ontario, Canada." width="400">
-                <figcaption>The beautiful watered landscape of Ontario. Photo taken by Kathleen Rivera.</figcaption>
+                <img src="images/Alaska.webp"
+                    alt="An image image of downtown Anchorage." width="400">
+                <figcaption>An image of downtown Anchorage Alaska.</figcaption>
             </figure>
 
-        </section>
-        <section class="certificate">
-            <h2>Web and Computer Programming Certificate</h2>
-            <p id="num-credits">Total Number of Credits: </p>
-            <div class="certificate-buttons">
-                <button id="all">ALL</button>
-                <button id="cse">CSE</button>
-                <button id="wdd">WDD</button>
-            </div>
-            <div class="course-cards">
-                <!-- Where the course cards will be updated dynamically by JS -->
-            </div>
         </section>
     </main>
     <footer>
         <p>
             &copy;
             <span id="currentyear"></span>
-            Kathleen Rivera | Canada
+            WDD231 Homepage | Brigs Dean
         </p>
         <p id="lastModified">
 
