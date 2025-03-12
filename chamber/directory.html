@@ -42,63 +42,48 @@
 <body>
     <header>
         <div class="page-banner">
-            <img src="images/logo.webp" width="300"
-                alt="Palmer chamber of commerce logo.">
+            <img src="images/logo.webp" width="300" height="auto"
+                alt="Logo of Palmer Chamber of Commerce.">
             <h1>
-                Palmer chamber of commerce
+                Palmer Chamber of Commerce
             </h1>
-            <button id="hamburger" aria-label="open nav"></button>
+            <button id="hamburger"></button>
         </div>
 
 
         <nav id="animateme">
             <ul id="main-menu">
                 <li>
-                    <a href="chamber.html" class="active">Home</a>
+                    <a href="index.html">Home</a>
                 </li>
-
-
+                <li>
+                    <a href="directory.html" class="active">Directory</a>
+                </li>
+                <li>
+                    <a href="join.html">Join</a>
+                </li>
+                <li>
+                    <a href="discover.html">Discover</a>
+                </li>
             </ul>
         </nav>
     </header>
     <main>
-        <h2 class="info-panel-heading">Welcome to Palmers Chamber of Commerce</h2>
-        <div class="info-panel-flexbox">
-            <div class="current-events">
-                <h3>
-                    Current Events
-                </h3>
-                <div>
-
-                </div>
-            </div>
-            <div class="current-weather">
-                <h3>
-                    Current Weather
-                </h3>
-                <div>
-                    <p>The current temperature in Palmer Alaska is <span id="current-temp"></span>
-                    </p>
-                    <figure id="current-weather-icon">
-
-                    </figure>
-                </div>
-            </div>
+        <div id="card-view-button-container">
+            <button id="cards-grid">◾️</button>
+            <button id="cards-list">🟰</button>
         </div>
-        <div class="spotlight-container">
-            <h2>Member Spotlight</h2>
-            <div id="spotlight">
+        <div id="cards" class="cards-grid">
 
-            </div>
         </div>
-
     </main>
     <footer>
-        <div class="footer-flexbox">
-            <p class="footer-address">
-                Palmer Chamber of Commerce
+        <div>
+            <p>
+                <b>Palmer Chamber of Commerce</b>
                 <br> 832 S Colony Way
-                <br> Palmer Alaska
+                <br> Palmer, AK
+                <br> N4S 0A7
                 <br> (907) 745-2880
             </p>
             <p id="social-media-icons">
@@ -110,12 +95,10 @@
                 WDD231 Course Project
                 <br> Brigs Dean
                 <br> &copy;
-                <span id="currentyear"></span> Palmer Alaska Chamber of Commerce and Industry
+                <span id="currentyear"></span> Palmer Alaska chamber of Commerce
                 <br>
-
             </p>
         </div>
-
     </footer>
 </body>
 
