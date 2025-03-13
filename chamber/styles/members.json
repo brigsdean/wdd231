@@ -9,51 +9,51 @@
             "membershipLevel": "Gold"
         },
         {
-            "name": "The Woodstock School of Dance & Yoga",
-            "address": "30 Reeve St (Unit 101), Woodstock, ON N4S 3G4",
-            "phoneNumber": "(226) 228-5673",
-            "url": "https://woodstockdanceyoga.com/",
-            "imgFile": "images/wsoday-logo.webp",
+            "name": "49th State Street Rodders",
+            "address": "17800 E. Plumley Rd, Palme",
+            "phoneNumber": "(907) 244-0843",
+            "url": "http://www.49thstatestreetrodders.org/",
+            "imgFile": "images/49S-logo.webp",
             "membershipLevel": "Silver"
         },
         {
-            "name": "Woodstock Memorials",
-            "address": "1057 Parkinson Road (Unit 2), Woodstock, ON N4S 7W3",
-            "phoneNumber": "(519) 421 2427",
-            "url": "https://www.superiormemorials.com/copy-of-kitchener-5",
-            "imgFile": "images/woodstock-memorials-logo.webp",
+            "name": "Alaska Helicopter Tours",
+            "address": "1842 Merrill Field Dr, Anchorage",
+            "phoneNumber": "(760) 666-0122",
+            "url": "https://www.alaskahelicoptertours.com/",
+            "imgFile": "images/AKHT.weebp",
             "membershipLevel": "Gold"
         },
         {
-            "name": "Baby Bumpz",
-            "address": "395 Dundas Street, Woodstock ON N4S 1B6",
-            "phoneNumber": "(216) 213-3788",
-            "url": "https://babybumpzwoodstock.wordpress.com/",
-            "imgFile": "images/baby-bumpz-logo.webp",
+            "name": "Bright Lights Book Project",
+            "address": "13329 E Oceanview Rd, Palmer, AK",
+            "Email": "director@brightlightsbookproject.org",
+            "url": "https://www.brightlightsbookproject.org//",
+            "imgFile": "images/BLBP.webp",
             "membershipLevel": "Silver"
         },
         {
-            "name": "Habitual Chocolate",
-            "address": "389 Dundas St, Woodstock, ON N4S 1B6",
-            "phoneNumber": "(519) 535-1341",
-            "url": "https://www.habitualchocolate.com/",
-            "imgFile": "images/habitual-chocolate-logo.webp",
+            "name": "MAC Federal Credit Union",
+            "address": "2700 E Parks Highway, Wasilla, AK",
+            "phoneNumber": "(907) 456-1253",
+            "url": "https://macfcu.org",
+            "imgFile": "images/MAC.webp",
             "membershipLevel": "Gold"
         },
         {
-            "name": "Millard Glass Windows and Doors",
-            "address": "338 Dundas St (Unit 104), Woodstock, ON Canada N4S 1B4",
-            "phoneNumber": "(519) 421-1335",
-            "url": "https://millardglass.com/",
-            "imgFile": "images/millard-logo.webp",
+            "name": "MTA",
+            "address": "480 Commercial Dr, Palmer, ",
+            "phoneNumber": "(907) 745-3211",
+            "url": "https://www.mtasolutions.com/",
+            "imgFile": "images/MTA.webp",
             "membershipLevel": "Gold"
         },
         {
-            "name": "Nerdz Game Café",
-            "address": "365 Dundas St Woodstock, ON N4S 1B6",
-            "phoneNumber": "519-290-9598",
-            "url": "https://nerdzgaming.com/",
-            "imgFile": "images/nerdz-game-cafe-logo.webp",
+            "name": "Skeetawk",
+            "address": "13500 N Skeetawk Cir, Palmer",
+            "phoneNumber": "(907) 746-7277",
+            "url": "https://skeetawk.com/",
+            "imgFile": "images/skeetawk-logo.webp",
             "membershipLevel": "Silver"
         }
     ]
