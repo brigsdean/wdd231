@@ -1,0 +1,196 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="author" content="Brigs Dean">
+    <meta name="description" content="BYU-I WDD231 Course Project | CoC Discover Page">
+
+    <!-- CSS -->
+    <link rel="stylesheet" href="styles/normalize.css">
+    <link rel="stylesheet" href="styles/base.css">
+
+    <!-- JS -->
+    <script src="scripts/menu.js" defer></script> <!-- responsive nav menu -->
+    <script src="scripts/getdates.js" defer></script> <!-- Last modified, current year for &copy in footer -->
+
+    <!-- Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Lato:ital,wght@0,300;1,300&family=Passion+One&display=swap"
+        rel="stylesheet">
+
+    <!-- Social Media meta tags-->
+    <meta property="og:title" content="Palmers Chamber of Commerce | Home">
+    <meta property="og:type" content="website">
+    <meta property="og:description" content="Welcome to Palmers Chamber of Commerce.">
+    <meta property="og:image"
+        content="https://img.evbuc.com/https%3A%2F%2Fcdn.evbuc.com%2Fimages%2F602717509%2F216769764468%2F1%2Foriginal.20230920-202730?w=512&auto=format%2Ccompress&q=75&sharp=10&rect=0%2C0%2C1080%2C1080&s=d04a3b4b2b7a0d9b17ea893833ace788">
+    <meta property="og:url" content="https://brigsdean.github.io/wdd231/chamber/directory.html">
+    <meta name="twitter:card" content="summary">
+
+    <!-- Site Page Title -->
+    <title>Chamber of Commerce | Discover</title>
+
+    <!-- favicon -->
+    <link rel="icon" href="favicon.ico">
+</head>
+
+<body>
+    <header>
+        <div class="page-banner">
+            <img src="images/logo.webp"
+                alt="logo of Palmer Chamber of Commerce.">
+            <h1>
+                Palmer Chamber of Commerce
+            </h1>
+            <button id="hamburger"></button>
+        </div>
+
+
+        <nav id="animateme">
+            <ul id="main-menu">
+                <li>
+                    <a href="index.html">Home</a>
+                </li>
+                <li>
+                    <a href="directory.html">Directory</a>
+                </li>
+                <li>
+                    <a href="join.html">Join</a>
+                </li>
+                <li>
+                    <a href="discover.html" class="active">Discover</a>
+                </li>
+            </ul>
+        </nav>
+    </header>
+    <main>
+        <h2>Discover Palmer</h2>
+        <div class="sidebarGrid">
+            <div class="discover-imgs">
+                <figure>
+                    <img src="images/wlibrary.jpg" alt="Angled front view of the Palmer Public Library in summer.">
+                    <figcaption>
+                        The Palmer Library is a central point of social activity in this bustling city, for people of
+                        all
+                        ages.
+                    </figcaption>
+                </figure>
+                <figure>
+                    <img src="images/wcourthouse.jpg" alt="Palmer Courthouse in summer. The building is brick-front."
+                        loading="lazy">
+                    <figcaption>
+                        The courthouse in the city nestled in a beautifully adorned lawnscape, and boasts a beautiful
+                        brickfront.
+                    </figcaption>
+                </figure>
+                <figure>
+                    <img src="images/wchristmas.jpg" alt="Christmas celebrations include a Santa's Workshop!"
+                        loading="lazy">
+                    <figcaption>
+                        The city comes together during the festive holiday season to celebrate with a parade.
+                    </figcaption>
+                </figure>
+                <figure>
+                    <img src="images/wfarms.jpg" alt="An image of one of several farmfields located in Palmer."
+                        loading="lazy">
+                    <figcaption>
+                        Farmland in Palmer is rich with abundant soil and crops that serve us locally and abroad. We
+                        are
+                        always cheering our farmers on!
+                    </figcaption>
+                </figure>
+                <figure>
+                    <img src="images/wribfest.jpg"
+                        alt="A streetview of a community celebrating Ribfest. Image is in summer." loading="lazy">
+                    <figcaption>
+                        Ribfest is a powerful opportunity for business-owners and customers to build trusting
+                        relationships,
+                        and to promote economical bounty in the city!
+                    </figcaption>
+                </figure>
+                <figure>
+                    <img src="images/wpark.jpg"
+                        alt="A paved path located beside medium-aged trees with green foliage. The trees sit next to a peaceful river in summer."
+                        loading="lazy">
+                    <figcaption>
+                        The city boasts beautiful waterside parks, offering greenspace for families and individuals
+                        alike.
+                    </figcaption>
+                </figure>
+            </div>
+
+            <div class="sidebar"> <!-- sidebar -->
+                <div>
+                    <p>
+                        <a href="join.html" class="join-button">Join The Palmer chamber of commerce</a>
+                    </p>
+                    <p>
+                        Select from 1 of 4 membership types to receive perks and help your business grow.
+                    </p>
+                </div>
+                <div>
+                    <h3>Quick Facts</h3>
+                    <p>First settled in 1800 by Zacharias Burtch and Levi Luddington</p>
+                    <p>Established as a town in 1851. Population at the time was 2, 112.</p>
+                    <p>Population: 46, 705</p>
+                </div>
+                <div>
+                    <h3>Featured Event</h3>
+                    <figure>
+                        <img src="images/mayor.jpg" alt="Headshot of the mayor of Palmer." loading="lazy">
+                        <figcaption>
+                            The mayor of Palmer, Alaska is excited to meet with Palmer chamber of commerce on January 6, 2025 to discuss
+                            how commerce in Palmer can improve the lives of its community members.
+                        </figcaption>
+                    </figure>
+                </div>
+                <div>
+                    <h3>Help Articles of the Month</h3>
+                    <p>
+                        <a href="https://www.business.com/articles/12-ways-to-increase-sales/">How to Improve Sales for
+                            your Small Business</a>
+                    </p>
+                    <p>
+                        <a href="https://www.salesforce.com/ca/small-business/marketing/smb-marketing-guide/">Marketing
+                            for Your Business</a>
+                    </p>
+                    <p>
+                        <a href="https://www.ontario.ca/page/business/start/register-your-business-online">How to
+                            Register Your Business Online</a>
+                    </p>
+                </div>
+
+
+            </div>
+        </div>
+
+    </main>
+    <footer>
+        <div class="footer-flexbox">
+            <p class="footer-address">
+                Palmer chamber of
+                <br> 832 S Colony Way
+                <br> Palmer, AK
+                <br> (907) 745-2880
+            </p>
+            <p id="social-media-icons">
+                <img src="images/fb.png" width="50" alt="Facebook icon" loading="lazy">
+                <img src="images/X.png" width="50" alt="Twitter icon" loading="lazy">
+                <img src="images/instagram.png" width="50" alt="Instagram icon" loading="lazy">
+            </p>
+            <p id="lastModified">
+                WDD231 Course Project
+                <br> Brigs Dean
+                <br> &copy;
+                <span id="currentyear"></span> Palmer Chamber of Commerce
+                <br>
+
+            </p>
+        </div>
+
+    </footer>
+</body>
+</html>
