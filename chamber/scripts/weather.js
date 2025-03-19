@@ -1,11 +1,8 @@
-// Reference HTML elements
-// current weather
+
 const currentTemp = document.querySelector('#current-temp');
 const captionDesc = document.querySelector('figcaption');
 const currentWeatherIcon = document.querySelector('#current-weather-icon');
 
-// reference HTML elements
-// weather forecast
 const forecastTemp = document.querySelector('#forecast-temp');
 const weatherIcon = document.querySelector('#weather-icon');
 
