@@ -7,9 +7,9 @@ const forecastTemp = document.querySelector('#forecast-temp');
 const weatherIcon = document.querySelector('#weather-icon');
 
 // API
-const currentWeatherURL = 'https://api.openweathermap.org/data/2.5/weather?lat=50.25&lon=--73.59&units=metric&appid=5ef6b1edec6f158631045e6f787dce3e';
+const currentWeatherURL = 'https://api.openweathermap.org/data/2.5/weather?lat=61.59&lon=-149.11&units=metric&appid=5ef6b1edec6f158631045e6f787dce3e';
 
-const weatherForecastURL = 'https://api.openweathermap.org/data/2.5/forecast?lat=50.25&lon=-73.59&units=metric&appid=5ef6b1edec6f158631045e6f787dce3e';
+const weatherForecastURL = 'https://api.openweathermap.org/data/2.5/forecast?lat=61.59&lon=-149.11&units=metric&appid=5ef6b1edec6f158631045e6f787dce3e';
 
 // Asynchronous function using a try block
 async function apiFetch() {
