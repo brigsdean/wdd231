@@ -1,160 +1,177 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Palmer Chamber of commerce</title>
-    <meta name="description" content="This is a sample webpage about web development fundamentals for the class WDD231.">
-    <meta name="author" content="Sthephani Platero">
+    <meta name="author" content="Brigs Dean">
+    <meta name="description" content="BYU-I WDD231 Course Project | CoC Join Page">
+
+    <!-- CSS -->
     <link rel="stylesheet" href="styles/normalize.css"> 
     <link rel="stylesheet" href="styles/base.css">
     <link rel="stylesheet" href="styles/join.css">
-    <meta property="og:title" content="Palmer Chamber of commerce">
-    <meta property="og:type" content="Website" />
-    <meta property="og:description" content="Home page for Palmer Chamber of commerce">
-    <meta property="og:image" content="https://dynamic-media-cdn.tripadvisor.com/media/photo-o/15/e8/5a/fe/20181228-012854-largejpg.jpg?w=1100&h=1100&s=1">
+
+    <!-- JS -->
+    <script src="scripts/menu.js" defer></script>
+    <script src="scripts/timestamp.js" defer></script>
+    <script src="scripts/getdates.js" defer></script>
+
+    <!-- Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Lato:ital,wght@0,300;1,300&family=Passion+One&display=swap"
+        rel="stylesheet">
+
+    <meta property="og:title" content="Palmer Chamber of Commerce">
+    <meta property="og:type" content="website">
+    <meta property="og:description" content="Welcome to Palmer Chamber of Commerce.">
+    <meta property="og:image"
+        content="https://img.evbuc.com/https%3A%2F%2Fcdn.evbuc.com%2Fimages%2F602717509%2F216769764468%2F1%2Foriginal.20230920-202730?w=512&auto=format%2Ccompress&q=75&sharp=10&rect=0%2C0%2C1080%2C1080&s=d04a3b4b2b7a0d9b17ea893833ace788">
     <meta property="og:url" content="https://brigsdean.github.io/wdd231/chamber/directory.html">
     <meta name="twitter:card" content="summary">
-    <meta property="og:site_name" content="Palmer Chamber of commerce" />
-    <meta name="twitter:image:alt" content="Home page for Palmer Chamber of commerce"/>   
+
+
+    <!-- Site Page Title -->
+    <title>Palmer Chamber of Commerce | Join</title>
+
+    <!-- favicon -->
+    <link rel="icon" href="favicon.ico">
 </head>
 
 <body>
-    <header class="top-bar">
-        <div class="logo">
-            <a href="#">
-                <img src="images/logo.webp" alt="Logo" class="logo-img">
-            </a>
-            <div class="logo-text">
-                <h2>Palmer</h2>
-                <h3>Chamber of commerce</h3>
-            </div>
+    <header>
+        <div class="page-banner">
+            <img src="images/logo.webp"
+                alt="logo of Palmer Chamber of Commerce.">
+            <h1>
+                Palmer Chamber of Commerce
+            </h1>
+            <button id="hamburger"></button>
         </div>
 
-        <div class="hamburger-menu" onclick="toggleMenu()">
-            <div class="bar"></div>
-            <div class="bar"></div>
-            <div class="bar"></div>
-        </div>
 
-        <nav class="nav-links">
-            <a href="index.html">Home</a>
-            <a href="discover.html">Discover</a>
-            <a href="directory.html">Directory</a>
-            <a href="join.html">Join</a>
+        <nav id="animateme">
+            <ul id="main-menu">
+                <li>
+                    <a href="index.html">Home</a>
+                </li>
+                <li>
+                    <a href="directory.html">Directory</a>
+                </li>
+                <li>
+                    <a href="join.html" class="active">Join</a>
+                </li>
+                <li>
+                    <a href="discover.html">Discover</a>
+                </li>
+            </ul>
         </nav>
     </header>
-    
     <main>
-        <h2>More Info</h2>
+        <h2>Join the Palmer Chamber of Commerce</h2>
 
-        <div class="main-buttons-container">
-            <button class="membership-button" id="OpenButton1">Free Membership</button>
-            <button class="membership-button" id="OpenButton2">Bronze Membership</button>
-            <button class="membership-button" id="OpenButton3">Silver Membership</button>
-            <button class="membership-button" id="OpenButton4">Gold Membership</button>
-        </div>
+        <form action="/chamber/thankyou.html" method="get" class="queryForm" target="_blank" autocomplete="on">
+            <!-- First name -->
+            <label>First Name <input type="text" name="first" required autocomplete="given-name" placeholder="John/Jane"
+                    title="Your First Name"></label>
+            <!-- Last name -->
+            <label>Last Name<input type="text" name="last" required autocomplete="family-name" placeholder="Doe"
+                    title="Your Last Name"></label>
 
-        <!-- Modal -->
-        <div id="dialogBox">
-            <div id="dialogBoxBackdrop"></div> 
-            <div id="dialogBoxContent">
-                <div>Membership</div>
-                <div id="dialogBoxText"></div> 
-                <button id="closeButton">❌</button>
-            </div>
-        </div>
+            <!-- Email -->
+            <!-- add placeholder email -->
+            <label>Email<input type="email" name="email" required autocomplete="email" placeholder="youremail@gmail.com"
+                    title="Your Email Address"></label>
 
+            <!-- Mobile phone number-->
+            <label>Phone Number<input type="tel" name="telephone" required autocomplete="tel" placeholder="987-555-1234"
+                    title="Your Telephone Number"></label>
 
-        <form action="thankyou.html" method="get">
-            <label>
-                First Name:
-                <input type="text" name="first_name" title="Enter your first name" autocomplete="given-name" required>
-            </label>
-            
-            <label>
-                Last Name:
-                <input type="text" name="last_name" title="Enter your last name" autocomplete="family-name" required>
-            </label>
-            
-            <label>
-                Organizational Title:
-                <input type="text" name="org_title" title="Your title in the organization" autocomplete="organization-title" pattern="[A-Za-z\-\s]{7,}">
-            </label>
-            
-            <label>
-                Email:
-                <input type="email" name="email" title="Enter your email" autocomplete="email" placeholder="example@domain.com" required>
-            </label>
-            
-            <label>
-                Mobile Phone:
-                <input type="tel" name="mobile" title="Enter your mobile number" autocomplete="tel" required>
-            </label>
-            
-            <label>
-                Organization Name:
-                <input type="text" name="organization" title="Enter your business or organization name" autocomplete="organization" required>
-            </label>
-            
-            <label>
-                Membership Level:
-                <select name="membership">
-                    <option value="Free"> Free Membership</option>
-                    <option value="Bronze">Bronze Membership</option>
-                    <option value="Silver">Silver Membership</option>
-                    <option value="Gold">Gold Membership</option>
+            <h3>Organization Details</h3>
+            <!-- Business/ Org Name-->
+            <label>Name of Organization<input type="text" name="organization-name" required autocomplete="organization"
+                    title="Your Organization's Name"></label>
+
+            <!-- Organizational Title (not required)-->
+            <!-- pattern to only accept alpha, hyphens, spaces, min of seven characters using regular expression-->
+            <label>Your Organizational Title<input type="text" name="title" autocomplete="organization-title"
+                    title="Your Organizational Title"></label>
+
+            <!-- Membership Level -->
+            <label>Membership Level
+                <select name="membershipLevel" required>
+                    <option value="" selected disabled hidden>Select your membership level</option>
+                    <option value="Gold">Gold</option>
+                    <option value="Silver">Silver</option>
+                    <option value="Bronze">Bronze</option>
+                    <option value="Non-profit">Non-profit</option>
                 </select>
             </label>
-            
-            <label>
-                Business Description:
-                <textarea name="description" title="Describe your business"></textarea>
-            </label>
-            
-            <input type="hidden" name="timestamp" id="timestamp">
-            
-            <input type="submit" value="Join Us">
+
+            <!-- Bus/Org Description -->
+            <label>Briefly describe your organization<textarea id="description" name="description" rows="4"
+                    placeholder="Who do you serve in the community? What services do you offer?"
+                    title="Describe Your Organization"></textarea></label>
+
+            <!-- Timestamp -->
+            <!--the timestamp, hidden type, name, and id. This field contains the current date and time that the form was loaded by the user.-->
+            <input type="hidden" id="timestamp" name="timestamp" value="">
+
+
+            <!-- Submit button -->
+            <input type="submit" value="Apply Now" class="formSubmitButton">
         </form>
-        
 
-    </main>
-</body>
-
-    <footer>
-        <div class="footer-content">
-            <div class="footer-left">
-                <div class="organization-info">
-                    <h4>Palmer Chamber of Commerce</h4>
-                    <p>Palmer Alaska</p>
-                    <p><a href="mailto:info@Palmerchamber.com">info@Palmerchamber.com</a></p>
-                    <p>(503)6305-25836</p>
-                </div>
+        <div class="sidebarCards">
+            <div>
+                <h3>
+                    Gold Membership Level
+                </h3>
             </div>
-
-            <div class="social-links">
-                <a href="https://twitter.com" target="_blank" aria-label="Twitter">
-                    <img src="https://cdn.sengoku-his.com/bundles/aissengoku/img/sns/x_Logo_2_400.png" alt="Twitter" style="width: 50px; height: auto;">
-                </a>
-                <a href="https://instagram.com" target="_blank" aria-label="Instagram">
-                    <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTLMu-xhsjlnjS7bGXEZhmQqX46rXFY46oL8g&s" alt="Instagram" style="width: 25px; height: auto;">
-                </a>
-                <a href="https://youtube.com" target="_blank" aria-label="YouTube">
-                    <img src="https://upload.wikimedia.org/wikipedia/commons/e/ef/Youtube_logo.png" alt="YouTube" style="width: 25px; height: auto;">
-                </a>
+            <div>
+                <h3>
+                    Silver Membership Level
+                </h3>
             </div>
-
-            <div class="footer-right">
-                <p>WDD 231 Class Project<br>Brigs Dean<br>&copy;2024 Palmer Chamber of Commerce</p>
-                <p>Last Modification: <span id="date-modification"></span></p>
+            <div>
+                <h3>
+                    Bronze Membership Level
+                </h3>
+            </div>
+            <div>
+                <h3>
+                    Non Profit Membership Level
+                </h3>
             </div>
         </div>
-    </footer>
-    
- <!-- JS -->
- <script src="scripts/menu.js" defer></script>
- <script src="scripts/timestamp.js" defer></script>
- <script src="scripts/getdates.js" defer></script>
 
+    </main>
+    <footer>
+        <div class="footer-flexbox">
+            <p class="footer-address">
+                Palmer chamber of commerce
+                <br> 832 S Colony Way
+                <br> Palmer, AK
+                <br> (907) 745-2880
+            </p>
+            <p id="social-media-icons">
+                <img src="images/fb.png" width="50" alt="Facebook icon" loading="lazy">
+                <img src="images/x.png" width="50" alt="Twitter icon" loading="lazy">
+                <img src="images/instagram.png" width="50" alt="Instagram icon" loading="lazy">
+            </p>
+            <p id="lastModified">
+                WDD231 Course Project
+                <br> Brigs Dean
+                <br> &copy;
+                <span id="currentyear"></span> Palmer Chamber of Commerce
+                <br>
+
+            </p>
+        </div>
+
+    </footer>
 </body>
+
+
 </html>

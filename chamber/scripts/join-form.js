@@ -1,54 +1,51 @@
-// Grab the current URL for this page
-// including the attached GET values
-const currentURL = window.location.href;
-console.log(currentURL);
+document.addEventListener("DOMContentLoaded", () => {
+    const OpenButton1 = document.querySelector("#OpenButton1");
+    const OpenButton2 = document.querySelector("#OpenButton2");
+    const OpenButton3 = document.querySelector("#OpenButton3");
+    const OpenButton4 = document.querySelector("#OpenButton4");
+    const dialogBox = document.querySelector("#dialogBox");
+    const closeButton = document.querySelector("#closeButton");
+    const dialogBoxText = document.querySelector("#dialogBoxText");
+    const dialogBoxBackdrop = document.querySelector("#dialogBoxBackdrop");
 
-// decide what split character you will use for the CurrentURL variable
-const everything = currentURL.split('?');
-console.log(everything);
+    // Abrir el cuadro de diálogo con el contenido correspondiente
+    if (OpenButton1) {
+        OpenButton1.addEventListener("click", () => {
+            dialogBox.classList.add('show');
+            dialogBoxBackdrop.classList.add('show');
+            dialogBoxText.innerHTML = `Level: Free<br> Cost: Free<br> Benefits:<br> - Access to basic events.<br> - Newsletter subscription.`;
+        });
+    }
 
-// grab just the second half
-let formData = everything[1];
-console.log(formData);
+    if (OpenButton2) {
+        OpenButton2.addEventListener("click", () => {
+            dialogBox.classList.add('show');
+            dialogBoxBackdrop.classList.add('show');
+            dialogBoxText.innerHTML = `Level: Bronze<br> Cost: $50<br> Benefits:<br> - Access to basic events.<br> - Newsletter subscription.<br> - Discounts on selected events.`;
+        });
+    }
 
-// break the form name value pairs into an array
-formData = formData.split('&');
-console.log(formData);
+    if (OpenButton3) {
+        OpenButton3.addEventListener("click", () => {
+            dialogBox.classList.add('show');
+            dialogBoxBackdrop.classList.add('show');
+            dialogBoxText.innerHTML = `Level: Silver<br> Cost: $100<br> Benefits:<br> - Access to basic events.<br> - Newsletter subscription.<br> - Training sessions.<br> - Advertising opportunities.`;
+        });
+    }
 
-function show(cup) {
-    console.log(cup);
+    if (OpenButton4) {
+        OpenButton4.addEventListener("click", () => {
+            dialogBox.classList.add('show');
+            dialogBoxBackdrop.classList.add('show');
+            dialogBoxText.innerHTML = `Level: Gold<br> Cost: $200<br> Benefits:<br> - Access to basic events.<br> - Newsletter subscription.<br> - Exclusive training sessions.<br> - Premium advertising.<br> - VIP networking events.`;
+        });
+    }
 
-    formData.forEach((element) => {
-        // ask if each element starts with the parameter we sent through the function (in this case, cup)
-        if (element.startsWith(cup)) {
-            // cut the, for eg: 'phone=' off
-            // and now only show what is after, for eg: 'last.' (do this using [1])
-            // .replace("%40", "@") fixes the coding for "@" that takes place when data is stored in a URL
-            result = element.split("=")[1].replace("%40", "@");
-            console.log(result);
-
-        } // end if
-    })
-    return (result);
-} // end show
-
-
-function timestampReplace(timestamp) {
-    timestamp = timestamp.replace(/%2F/g, "/");
-    timestamp = timestamp.replace(/%2C/g, " ");
-    timestamp = timestamp.replace(/%3A/g, ":")
-    timestamp = timestamp.replace(/\+/g, " ");
-    return timestamp;
-}
-
-
-const showInfo = document.querySelector('#results');
-console.log(showInfo.innerHTML);
-showInfo.innerHTML = `
-<p>Form submitted by: ${show('first')} ${show('last')}</p>
-<p>Email: <a href="mailto:${show("email")}">${show("email")}</a></p>
-<p>Phone number: ${show("telephone")}</p>
-<p>Organization: ${show("organization").replace("+", " ")}</p>
-<p>Membership level selected: ${show("membershipLevel")}</p>
-<p>Application submitted: ${timestampReplace(show("timestamp"))}</p>
-`;
+    // Cerrar el cuadro de diálogo
+    if (closeButton) {
+        closeButton.addEventListener("click", () => {
+            dialogBox.classList.remove('show');
+            dialogBoxBackdrop.classList.remove('show');
+        });
+    }
+});
