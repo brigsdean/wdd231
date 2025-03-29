@@ -123,26 +123,20 @@
             <input type="submit" value="Apply Now" class="formSubmitButton">
         </form>
 
-        <div class="sidebarCards">
-            <div>
-                <h3>
-                    Gold Membership Level
-                </h3>
-            </div>
-            <div>
-                <h3>
-                    Silver Membership Level
-                </h3>
-            </div>
-            <div>
-                <h3>
-                    Bronze Membership Level
-                </h3>
-            </div>
-            <div>
-                <h3>
-                    Non Profit Membership Level
-                </h3>
+        <div class="main-buttons-container">
+            <button class="membership-button" id="OpenButton1">Free Membership</button>
+            <button class="membership-button" id="OpenButton2">Bronze Membership</button>
+            <button class="membership-button" id="OpenButton3">Silver Membership</button>
+            <button class="membership-button" id="OpenButton4">Gold Membership</button>
+        </div>
+
+        <!-- Modal -->
+        <div id="dialogBox">
+            <div id="dialogBoxBackdrop"></div> 
+            <div id="dialogBoxContent">
+                <div>Membership</div>
+                <div id="dialogBoxText"></div> 
+                <button id="closeButton">❌</button>
             </div>
         </div>
 
