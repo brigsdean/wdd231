@@ -1,0 +1,46 @@
+* {
+    box-sizing: border-box;
+}
+
+body{
+    font-family: "poppins", sans-serif;
+    background-color: #111;
+}
+
+button{
+    background-image: linear-gradient(#FFD700, #C0C0C0);
+    border-radius: 20px;
+    border: 0;
+    box-shadow: 0 1px 4px rgba(0, 0, 0, 0.3);
+    color: #fff;
+    cursor: pointer;
+    padding: 10px 25px;
+}
+button:active{
+    opacity: 0.8;
+}
+
+.modal {
+    background-color: rgba(0, 0, 0, 0.3);
+    opacity: 0;
+    position: fixed;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    transition: all 0.3s ease-in-out
+    z-index -1
+
+    display flex
+    align-items center
+    justify-content center
+}
+
+.modal.open{
+    opacity: 1;
+    z-index: 999;
+}
+
+.modaal-inner h2{
+    margin: 0;
+}
