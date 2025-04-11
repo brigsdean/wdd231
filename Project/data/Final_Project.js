@@ -2,10 +2,10 @@
 function displayDeckContent(deck) {
     let content = '';
 
-    if (deck === 'kaito-pair') {
+    if (deck === 'The Ur-dragon') {
         content = `
         <aside>
-            <h2>Evil★Twin the Kaito Pair</h2>
+            <h2>The Ur-dragon</h2>
         </aside>
  <main>
         <section id="hero">
@@ -404,9 +404,9 @@ function displayDeckContent(deck) {
 }
 
 // Event listeners for each deck link
-document.getElementById('kaito-pair').addEventListener('click', function(e) {
+document.getElementById('The Ur-dragon').addEventListener('click', function(e) {
     e.preventDefault();
-    displayDeckContent('kaito-pair');
+    displayDeckContent('The Ur-dragon');
 });
 
 document.getElementById('eldlich-conqueror').addEventListener('click', function(e) {
@@ -424,22 +424,22 @@ document.addEventListener("DOMContentLoaded", () => {
         const body = document.body;
 
         // Remove existing color classes
-        body.classList.remove("color-cyber-dragon", "color-eldlich", "color-kaito-pair");
+        body.classList.remove("color-cyber-dragon", "color-eldlich", "color-The Ur-dragon");
 
         // Add new color class based on the clicked card
         if (cardType === 'Cyber Dragon') {
             body.classList.add("color-cyber-dragon");
         } else if (cardType === 'Eldlich') {
             body.classList.add("color-eldlich");
-        } else if (cardType === 'Kaito Pair') {
-            body.classList.add("color-kaito-pair");
+        } else if (cardType === 'The Ur-dragon') {
+            body.classList.add("color-The Ur-dragon");
         }
     }
 
     // Event listeners for membership cards
     const cyberDragonCard = document.getElementById("cyber-dragon-card");
     const eldlichCard = document.getElementById("eldlich-card");
-    const kaitoPairCard = document.getElementById("kaito-pair-card");
+    const UrdragonCard = document.getElementById("The Ur-dragon-card");
 
     if (cyberDragonCard) {
         cyberDragonCard.addEventListener("click", () => changeColor('Cyber Dragon'));
@@ -449,7 +449,7 @@ document.addEventListener("DOMContentLoaded", () => {
         eldlichCard.addEventListener("click", () => changeColor('Eldlich'));
     }
 
-    if (kaitoPairCard) {
-        kaitoPairCard.addEventListener("click", () => changeColor('Kaito Pair'));
+    if (rdragonCard) {
+        UrdragonCard.addEventListener("click", () => changeColor('The Ur-dragon'));
     }
 });
