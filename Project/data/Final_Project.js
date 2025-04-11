@@ -10,7 +10,7 @@ function displayDeckContent(deck) {
  <main>
         <section id="hero">
             <div class="hero-content">
-                <img src="images/TTD_CD_DB.png" alt="The Ur-dragon Card Art">
+                <img src="images/urdragart.png" alt="The Ur-dragon Card Art">
                 <div class="deck-info">
                     <h2>Main Deck</h2>
                     <h3>Creatures</h3>
@@ -123,21 +123,24 @@ function displayDeckContent(deck) {
                 <h2>Highlight Cards</h2>
             </aside>
             <section id="features">
-                <div class="feature">
-                    <h3><img src="images/TTD_KP_Secret_Password.png" alt="Secret Password"></h3>
-                </div>
-                <div class="feature">
-                    <h3><img src="images/TTD_KP_Evil★Twins_Ki-sikil & Lil-la.png" alt="Evil★Twins Ki-sikil & Lil-la"></h3>
-                </div>
-                <div class="feature">
-                    <h3><img src="images/TTD_KP_Evil★Twin_Challenge.png" alt="Evil★Twin Challenge"></h3>
-                </div>
-            </section>
+            <div class="feature">
+                <h3><img src="images/urdrag.png" alt="The Ur-Dragon"></h3>
+
+            </div>
+            <div class="feature">
+                <h3><img src="images/Morophon.png" alt="Morophon the Boundless"></h3>
+
+            </div>
+            <div class="feature">
+                <h3><img src="images/Tiamat.png" alt="Tiamat"></h3>
+
+            </div>
+        </section>
         </main>`;
-    } else if (deck === 'eldlich-conqueror') {
+    } else if (deck === 'Marchesa') {
         content = `
         <aside>
-        <h2>Eldlich the Conqueror</h2>
+        <h2>Marchesa</h2>
     </aside>
     <main>
         <section id="hero">
@@ -258,17 +261,17 @@ function displayDeckContent(deck) {
         <aside>
             <h2>Highlight Cards</h2>
         </aside>
-        <section id="features">
+       <section id="features">
             <div class="feature">
-                <h3><img src="images/TTD_EC_Cursed_Eldland.png" alt="Cursed Eldland"></h3>
+                <h3><img src="images/Marchesacard.png" alt="Marchesa the Black Rose"></h3>
 
             </div>
             <div class="feature">
-                <h3><img src="images/TTD_EC_Eldlich_the_Golden_Lord.png" alt="Eldlich the Golden Lord"></h3>
+                <h3><img src="images/Tevesh.png" alt="Tevesh Szat, Doom of Fools"></h3>
 
             </div>
             <div class="feature">
-                <h3><img src="images/TTD_EC_Eldlixir_of_Scarlet_Sanguine.png" alt="Eldlixir of Scarlet Sanguine"></h3>
+                <h3><img src="images/insurrection.png" alt="Insurrection"></h3>
 
             </div>
         </section>
@@ -276,15 +279,15 @@ function displayDeckContent(deck) {
 </body>
 </html>
 `;
-    } else if (deck === 'cyber-dragon') {
+    } else if (deck === 'Zimone') {
         content = `
         <aside>
-            <h2>Decisive Strike Cyber Dragon</h2>
+            <h2>Zimone</h2>
         </aside>
     <main>
         <section id="hero">
             <div class="hero-content">
-                <img src="images/TTD_CD_DB.png" alt="Zimone, Paradox Sculptor Card">
+                <img src="images/Zimoneart.png" alt="Zimone, Paradox Sculptor Card">
                 <div class="deck-info">
                     <h2>Main Deck</h2>
                     <h3>Creatures</h3>
@@ -380,19 +383,19 @@ function displayDeckContent(deck) {
                 <h2>Highlight Cards</h2>
             </aside>
             <section id="features">
-                <div class="feature">
-                    <h3><img src="images/TTD_CD_Power_Bond.png" alt="Power_Bond"></h3>
-    
-                </div>
-                <div class="feature">
-                    <h3><img src="images/TTD_CD_Cyber_End_Dragon.png" alt="Cyber End Dragon"></h3>
-    
-                </div>
-                <div class="feature">
-                    <h3><img src="images/TTD_CD_Infinite_Impermanence.png" alt="Infinite Impermanence"></h3>
-    
-                </div>
-            </section>
+            <div class="feature">
+                <h3><img src="images/Zimonecard.png" alt="Zimone, Paradox Sculptor"></h3>
+
+            </div>
+            <div class="feature">
+                <h3><img src="images/Doubling.png" alt="Doubling Season"></h3>
+
+            </div>
+            <div class="feature">
+                <h3><img src="images/Simic.png" alt="Simic Ascendancy"></h3>
+
+            </div>
+        </section>
         </main>
     </body>
     </html>
@@ -409,14 +412,14 @@ document.getElementById('The Ur-dragon').addEventListener('click', function(e) {
     displayDeckContent('The Ur-dragon');
 });
 
-document.getElementById('eldlich-conqueror').addEventListener('click', function(e) {
+document.getElementById('Marchesa').addEventListener('click', function(e) {
     e.preventDefault();
-    displayDeckContent('eldlich-conqueror');
+    displayDeckContent('Marchesa');
 });
 
-document.getElementById('cyber-dragon').addEventListener('click', function(e) {
+document.getElementById('Zimone').addEventListener('click', function(e) {
     e.preventDefault();
-    displayDeckContent('cyber-dragon');
+    displayDeckContent('Zimone');
 });
 document.addEventListener("DOMContentLoaded", () => {
     // Function to change colors based on clicked card
@@ -424,29 +427,29 @@ document.addEventListener("DOMContentLoaded", () => {
         const body = document.body;
 
         // Remove existing color classes
-        body.classList.remove("color-cyber-dragon", "color-eldlich", "color-The Ur-dragon");
+        body.classList.remove("color-Zimone", "color-Marchesa", "color-The Ur-dragon");
 
         // Add new color class based on the clicked card
-        if (cardType === 'Cyber Dragon') {
-            body.classList.add("color-cyber-dragon");
-        } else if (cardType === 'Eldlich') {
-            body.classList.add("color-eldlich");
+        if (cardType === 'Zimone') {
+            body.classList.add("color-Zimone");
+        } else if (cardType === 'Marchesa') {
+            body.classList.add("color-Marchesa");
         } else if (cardType === 'The Ur-dragon') {
             body.classList.add("color-The Ur-dragon");
         }
     }
 
     // Event listeners for membership cards
-    const cyberDragonCard = document.getElementById("cyber-dragon-card");
-    const eldlichCard = document.getElementById("eldlich-card");
+    const ZimoneCard = document.getElementById("Zimone-card");
+    const MarchesaCard = document.getElementById("Marchesa-card");
     const UrdragonCard = document.getElementById("The Ur-dragon-card");
 
-    if (cyberDragonCard) {
-        cyberDragonCard.addEventListener("click", () => changeColor('Cyber Dragon'));
+    if (ZimoneCard) {
+        ZimoneCard.addEventListener("click", () => changeColor('Zimone'));
     }
 
-    if (eldlichCard) {
-        eldlichCard.addEventListener("click", () => changeColor('Eldlich'));
+    if (MarchesaCard) {
+        MarchesaCard.addEventListener("click", () => changeColor('Marchesa'));
     }
 
     if (rdragonCard) {
