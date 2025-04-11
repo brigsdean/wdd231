@@ -7,58 +7,115 @@ function displayDeckContent(deck) {
         <aside>
             <h2>Evil★Twin the Kaito Pair</h2>
         </aside>
-        <main>
-            <section id="hero">
-                <div class="hero-content">
-                    <img src="images/TTD_KP_DB.png" alt="Kaito Pair Deck Box">
-                    <div class="deck-info">
-                        <h2>Main Deck</h2>
-                        <h3>Monsters</h3>
-                        <ul>
-                            <li>Evil Twins Ki-sikil & Lil-la</li>
-                            <li>3x Live Twin Ki-sikil</li>
-                            <li>3x Live Twin Lil-la</li>
-                            <li>Live Twin Ki-sikil Frost</li>
-                            <li>Live Twin Lil-la Treat</li>
-                            <li>Spright Blue</li>
-                            <li>Spright Jet</li>
-                            <li>Spright Red</li>
-                            <li>Spright Carrot</li>
-                            <li>EM:P Gremeowade</li>
-                            <li>Ash Blossom & Joyous Spring</li>
-                            <li>Maxx C</li>
-                        </ul>
-                        <h3>Spells</h3>
-                        <ul>
-                            <li>Secret Password</li>
-                            <li>Live Twin Entrance</li>
-                            <li>3x Live Twin Sunny's Snitch</li>
-                            <li>Spright Starter</li>
-                            <li>Spright Smasher</li>
-                            <li>Spright Gamma Burst</li>
-                            <li>Harpie's Feather Duster</li>
-                            <li>Cosmic Cyclone</li>
-                            <li>2x Called by the Grave</li>
-                            <li>Crossout Designator</li>
-                            <li>Forbidden Droplet</li>
-                        </ul>
-                        <h3>Traps</h3>
-                        <ul>
-                            <li>Evil Twin Challenge</li>
-                            <li>Spright Double Cross</li>
-                            <li>2x Infinite Impermanence</li>
-                        </ul>
-                        <h3>Extra Deck</h3>
-                        <ul>
-                            <li>2x Evil Twin Ki-sikil</li>
-                            <li>2x Evil Twin Lil-la</li>
-                            <li>Evil Twin's Trouble Sunny</li>
-                            <li>I:P Masquerena</li>
-                            <li>Knightmare Unicorn</li>
-                            <li>Accesscode Talker</li>
-                            <li>Gigantic Spright</li>
-                            <li>Sky Calvary Centaurea</li>
-                        </ul>
+ <main>
+        <section id="hero">
+            <div class="hero-content">
+                <img src="images/TTD_CD_DB.png" alt="The Ur-dragon Card Art">
+                <div class="deck-info">
+                    <h2>Main Deck</h2>
+                    <h3>Creatures</h3>
+                    <ul>
+                        <li>The Ur-Dragon</Ur-Dragon></li>
+                        <li>Scourge of Valkas</li>
+                        <li>Miirym, Sentinel Wyrm</li>
+                        <li>Tiamat</li>
+                        <li>Earthquake Dragon</li>
+                        <li>Ancient Silver Dragon</li>
+                        <li>Ancient Bronze Dragon</li>
+                        <li>Ancient Brass Dragon</li>
+                        <li>Ancient Gold Dragon</li>
+                        <li>Deathbringer Regent</li>
+                        <li>Dragonmaster Outcast</li>
+                        <li>Dragonlord's Servant</li>
+                        <li>Humble Defector</li>
+                        <li>Ilysian Caryatid</li>
+                        <li>Korlessa, Scale Singer</li>
+                        <li>Dragonspeaker Shaman</li>
+                        <li>Dragon Turtle</li>
+                        <li>Patron of the Arts</li>
+                        <li>Rivaz of the Claw</li>
+                        <li>Ambitious Dragonborn</li>
+                        <li>Blade Historian</li>
+                        <li>Ebondeath, Dracolich</li>
+                        <li>Kyodai, Soul of Kamigawa</li>
+                        <li>Adult Gold Dragon</li>
+                        <li>Goldspan Dragon</li>
+                        <li>Lozhan Dragons' Legacy</li>
+                        <li>Rith, Liberated Primeval</li>
+                        <li>Thundermaw Hellkite</li>
+                        <li>Sunscorch Regent</li>
+                        <li>Twinflame Tyrant</li>
+                        <li>Wrathful Red Dragon</li>
+                        <li>Two-Headed Hellkite</li>
+                        <li>Ziatora, the Incinerator</li>
+                        <li>Drakuseth, Maw of Flames</li>
+                        <li>Morophon, the Boundless</li>
+                        <li>Utvara Hellkite</li>
+
+                    </ul>
+                    <h3>Sorceries</h3>
+                    <ul>
+                        <li>Crux of Fate</li>
+                        <li>Majestic Genesis</li>
+                        <li>Cultivate</li>
+                        <li>Explosive Vegitation</li>
+                        <li>Eerie Ultimatum</li>
+                        <li>Migration Path</li>
+                        <li>Rampant Growth</li>
+                        <li>VandalBlast</li>
+                        <li>Fearsome Awakening</li>
+                    </ul>
+                    <h3>Enchantments</h3>
+                    <ul>
+                        <li>Temur Asceendancy</li>
+                        <li>Frontier Siege</li>
+                        <li>Maelstrom Nexus</li>
+                    </ul>
+                    <h3>Artifacts</h3>
+                    <ul>
+                        <li>Sol Ring</li>
+                        <li>Arcane Signet</li>
+                        <li>Orb of Dragonkind</li>
+                        <li>Carnelian Orb of Dragonkind</li>
+                        <li>Jade Orb of Dragonkind</li>
+                        <li>Lapis Orb of Dragonkind</li>
+                        <li>Monster Manual // Zoological Study</li>
+                        <li>Chromatic Lantern</li>
+                        <li>Urza's Incubator</li>
+                        <li>Herald's Horn</li>
+                        <li>Commander's Sphere</li>
+                        <li>Dragon's Hoard</li>
+                        <li>Mithril Coat</li>
+                    </ul>
+                        <h3>Instants</h3>
+                    <ul>
+                        <li>Magmaquake</li>
+                        <li>Wild Magic Surge</li>
+                        <li>Foul-Tongue Invocation</li>
+                        <li>Predator's Rapport</li>
+                        <li>Spit Flame</li>
+                        <li>Your Temple Is Under Attacke</li>
+                        <li>Draconic Lore</li>
+
+                    </ul>
+                    <h3>Lands</h3>
+                    <ul>
+                        <li>Cinder Glade</li>
+                        <li>Command Tower</li>
+                        <li>6x Forest</li>
+                        <li>Haven of the Spirit Dragon</li>
+                        <li>3x Island</li>
+                        <li>Jungle Shrine</li>
+                        <li>Manor Gate</li>
+                        <li>8x Mountain</li>
+                        <li>Mystic Monastary</li>
+                        <li>Opulent Palace</li>
+                        <li>Path of Ancestry</li>
+                        <li>3x Plains</li>
+                        <li>Savage Lands</li>
+                        <li>3x Swamp</li>
+                        <li>Temple of the Dragon Queen</li>
+                    </ul>
                     </div>
                 </div>
             </section>
@@ -85,56 +142,115 @@ function displayDeckContent(deck) {
     <main>
         <section id="hero">
             <div class="hero-content">
-                <img src="images/TTD_EC_DB.png" alt="Eldlich Deck Box">
+                <img src="images/TTD_CD_DB.png" alt="Marchesa, the Black Rose Card">
                 <div class="deck-info">
                     <h2>Main Deck</h2>
-                    <h3>Monsters</h3>
+                    <h3>Creatures</h3>
                     <ul>
-                        <li>3x Eldlich the Golden Lord</li>
-                        <li>Doomking Balderoch</li>
-                        <li>Necroworld Banshee</li>
-                        <li>2x Ash Blossom & Joyous Spring</li>
+                        <li>Marchesa, the Black Rose</li>
+                        <li>Atsushi, the Blazing Sky</li>
+                        <li>Bloodflow Connoisseur</li>
+                        <li>Captivating Crew</li>
+                        <li>Carrion Feeder</li>
+                        <li>Dockside Extortionist</li>
+                        <li>Drillworks Mole</li>
+                        <li>Elder Brain</li>
+                        <li>Empress Galina</li>
+                        <li>Flayer of the Hatebound</li>
+                        <li>Grim Haruspex</li>
+                        <li>Grim Hireling</li>
+                        <li>Herald of Secret Streams</li>
+                        <li>Imperial Recruiter</li>
+                        <li>Iron Apprentice</li>
+                        <li>Junji, the Midnight Sky</li>
+                        <li>Kardur, Doomscourge</li>
+                        <li>Lord of the Void</li>
+                        <li>Lord Xander, the collector</li>
+                        <li>Opposition Agent</li>
+                        <li>Pitiless Plunderer</li>
+                        <li>Sepulchral Primordial</li>
+                        <li>Sower of Temptation</li>
+                        <li>Warren Souldtrader</li>
+                        <li>Yawgmoth, Thran Physician</li>
+                        <li>Zealous Conscripts</li>
                     </ul>
-                    <h3>Spells</h3>
+                    <h3>PlanesWalkers</h3>
                     <ul>
-                        <li>2x Cursed Eldland</li>
-                        <li>3x Eldlixir of Black Awakening</li>
-                        <li>Eldlixir of White Destiny</li>
-                        <li>Zombie World</li>
-                        <li>Pot of Extravagance</li>
-                        <li>Pot of Prosperity</li>
-                        <li>Foolish Burial</li>
-                        <li>Foolish Burial Goods</li>
-                        <li>Lightning Storm</li>
-                        <li>Cosmic Cyclone</li>
+                        <li>Tevesh Szat, Doom of Fools</li>
                     </ul>
-                    <h3>Traps</h3>
+                    <h3>Sorceries</h3>
                     <ul>
-                        <li>3x Eldlixir of Scarlet Sanguine</li>
-                        <li>2x Conquistador of the Golden Land</li>
-                        <li>2x Huaquero of the Golden Land</li>
-                        <li>Golden Land Forever!</li>
-                        <li>Solemn Judgment</li>
-                        <li>Skill Drain</li>
-                        <li>Rivalry of Warlords</li>
-                        <li>Gozen Match</li>
-                        <li>There Can Be Only One</li>
-                        <li>Dogmatika Punishment</li>
-                        <li>2x Torrential Tribute</li>
-                        <li>2x Infinite Impermanence</li>
+                        <li>Act of Treason</li>
+                        <li>Blasphemous Act</li>
+                        <li>Diabolic Tutor</li>
+                        <li>Dread Return</li>
+                        <li>Insurrection</li>
+                        <li>Mark of Mutiny</li>
+                        <li>Mass Mutiny</li>
+                        <li>Mob Rule</li>
+                        <li>Teachings of the Archaics</li>
+                        <li>Toxic Deluge</li>
+                        <li>Worst Fears</li>
                     </ul>
-                    <h3>Extra Deck</h3>
+                    <h3>Enchantments</h3>
                     <ul>
-                        <li>Elder Entity N'tss</li>
-                        <li>Garura, Wings of Resonant Life</li>
-                        <li>Constellar Pleiades</li>
-                        <li>Superdreadnought Rail Cannon Gustav Max</li>
-                        <li>Number 81: Superdreadnought Rail Cannon Super Dora</li>
-                        <li>Superdreadnought Rail Cannon Juggernaut Liebe</li>
-                        <li>Divine Arsenal AA-Zeus - Sky Thunder</li>
-                        <li>Link Spider</li>
-                        <li>Vampire Sucker</li>
-                        <li>Knightmare Phoenix</li>
+                        <li>Chamber of Manipulation</li>
+                        <li>Goblin Bombardment</li>
+                        <li>Grave Betrayal</li>
+                        <li>Leyline of Anticipation</li>
+                        <li>Rhystic Study</li>
+                        <li>Sneak Attack</li>
+                        <li>Thran Vigil</li>
+                        <li>Unspeakable Symbol</li>
+                        <li>Witness Protection</li>
+                    </ul>
+                    <h3>Artifacts</h3>
+                    <ul>
+                        <li>Andúril, Narsil Reforged</li>
+                        <li>Arcane Signet</li>
+                        <li>Ashnod's Altar</li>
+                        <li>Chromatic Lantern</li>
+                        <li>Commander's Sphere</li>
+                        <li>Dimir Signet</li>
+                        <li>Fellwar Stone</li>
+                        <li>Sol Ring</li>
+                        <li>Swiftfoot Boots</li>
+                        <li>The Golden Throne</li>
+                        <li>The Ozolith</li>
+                        <li>Vedalken Orrery</li>
+                    </ul>
+                        <h3>Instants</h3>
+                    <ul>
+                        <li>Act of Aggression</li>
+                        <li>Counterspell</li>
+                        <li>Mystic Reflection</li>
+                        <li>Negate</li>
+                        <li>Village Rites</li>
+                    </ul>
+                    <h3>Lands</h3>
+                    <ul>
+                        <li>Crumbling Necropolis</li>
+                        <li>Command Tower</li>
+                        <li>Exotic Orchard</li>
+                        <li>Fabled Passage</li>
+                        <li>4x Island</li>
+                        <li>Hall of Oracles</li>
+                        <li>High Market</li>
+                        <li>7x Mountain</li>
+                        <li>Izzet Guildgate</li>
+                        <li>Luxury Suite</li>
+                        <li>Morphic Pool</li>
+                        <li>Nesting Grounds</li>
+                        <li>Opal Palace</li>
+                        <li>7x Swamp</li>
+                        <li>Phyrexian Tower</li>
+                        <li>Reflecting Pool</li>
+                        <li>Sea Gate</li>
+                        <li>Shivan Reef</li>
+                        <li>Smoldering Marsh</li>
+                        <li>Sulfurous Springs</li>
+                        <li>Sunken Hollow</li>
+                        <li>Thriving Bluff</li>
                     </ul>
                 </div>
             </div>
@@ -165,60 +281,98 @@ function displayDeckContent(deck) {
         <aside>
             <h2>Decisive Strike Cyber Dragon</h2>
         </aside>
-        <main>
-            <section id="hero">
-                <div class="hero-content">
-                    <img src="images/TTD_CD_DB.png" alt="Cyber Dragon Deck Box">
-                    <div class="deck-info">
-                        <h2>Main Deck</h2>
-                        <h3>Monsters</h3>
-                        <ul>
-                            <li>3x Cyber Dragon</li>
-                            <li>3x Cyber Dragon Core</li>
-                            <li>2x Cyber Dragon Herz</li>
-                            <li>Cyber Dragon Nachster</li>
-                            <li>Cyberdark Chimera</li>
-                            <li>Jizukiru</li>
-                            <li>Therion King Regulus</li>
-                            <li>2x Galaxy Soldier</li>
-                            <li>2x Ash Blossom</li>
-                            <li>2x Maxx C</li>
-                        </ul>
-                        <h3>Spells</h3>
-                        <ul>
-                            <li>2x Power Bond</li>
-                            <li>3x Cyber Emergency</li>
-                            <li>Cyber Repair Plant</li>
-                            <li>Cyberdark World</li>
-                            <li>Machine Duplication</li>
-                            <li>2x Clockwork Night</li>
-                            <li>Triple Tactic Talents</li>
-                            <li>Triple Tactic Thrust</li>
-                            <li>Sales Ban</li>
-                            <li>Raigeki</li>
-                            <li>Harpie's Feather Duster</li>
-                            <li>2x Lightning Storm</li>
-                            <li>2x Called by the Grave</li>
-                            <li>Forbidden Droplet</li>
-                        </ul>
-                        <h3>Traps</h3>
-                        <ul>
-                            <li>Red Reboot</li>
-                            <li>Infinite Impermanence</li>
-                        </ul>
-                        <h3>Extra Deck</h3>
-                        <ul>
-                            <li>Cyber End Dragon</li>
-                            <li>Cyber Twin Dragon</li>
-                            <li>Chimeratech Megafleet Dragon</li>
-                            <li>Chimeratech Fortress Dragon</li>
-                            <li>Chimeratech Rampage Dragon</li>
-                            <li>Cyber Dragon Nova</li>
-                            <li>Cyber Dragon Infinity</li>
-                            <li>Cyber Dragon Sieger</li>
-                            <li>Sky Striker Ace - Azalea</li>
-                            <li>Salamangreat Almiraj</li>
-                        </ul>
+    <main>
+        <section id="hero">
+            <div class="hero-content">
+                <img src="images/TTD_CD_DB.png" alt="Zimone, Paradox Sculptor Card">
+                <div class="deck-info">
+                    <h2>Main Deck</h2>
+                    <h3>Creatures</h3>
+                    <ul>
+                        <li>Zimone, Paradox Sculptor</li>
+                        <li>Aegis Turtle</li>
+                        <li>Burnished Hart</li>
+                        <li>Clinquant Skymage</li>
+                        <li>Deepglow Skate</li>
+                        <li>Drake Hatcher</li>
+                        <li>Dreamtide Whale</li>
+                        <li>Evolution Sage</li>
+                        <li>Grappling Kraken</li>
+                        <li>Herald of Secret Streams</li>
+                        <li>Homunculus Horde</li>
+                        <li>Kiora's Follower</li>
+                        <li>Koma, World-Eater</li>
+                        <li>Llanowar Elves</li>
+                        <li>Pir, Imaginative Rascal</li>
+                        <li>Quilled Greatwurm</li>
+                        <li>Reclamation Sage</li>
+                        <li>Scrawling Crawler</li>
+                        <li>Sire of Seven Deaths</li>
+                        <li>Spinner of Souls</li>
+                        <li>Tatyova, Benthic Druid</li>
+                        <li>Toothy, Imaginary Friend</li>
+                        <li>Treetop Snarespinner</li>
+                        <li>Tribute Mage</li>
+                        <li>Twenty-Toed Toad</li>
+                        <li>Vorel of the Hull Clade</li>
+                        <li>Wildwood Scourge</li>
+                    </ul>
+                    <h3>PlanesWalkers</h3>
+                    <ul>
+                        <li>Tamiyo, Compleated Sage</li>
+                    </ul>
+                    <h3>Sorceries</h3>
+                    <ul>
+                        <li>Bushwhack</li>
+                        <li>Felling Blow</li>
+                        <li>Genesis Wave</li>
+                        <li>Grow from the Ashes</li>
+                        <li>Lunar Insight</li>
+                        <li>Self-Reflection</li>
+                    </ul>
+                    <h3>Enchantments</h3>
+                    <ul>
+                        <li>Doubling Season</li>
+                        <li>Garruk's Uprising</li>
+                        <li>Imprisoned in the Moon</li>
+                        <li>Omniscience</li>
+                        <li>Simic Ascendancy</li>
+                        <li>Sphinx's Tutelage</li>
+                        <li>Sylvan Scavenging</li>
+                        <li>Witness Protection</li>
+                    </ul>
+                    <h3>Artifacts</h3>
+                    <ul>
+                        <li>Arcane Signet</li>
+                        <li>Commander's Sphere</li>
+                        <li>Everflowing Chalice</li>
+                        <li>Ichormoon Gauntlet</li>
+                        <li>Sol Ring</li>
+                        <li>Swiftfoot Boots</li>
+                        <li>Smokestack</li>
+                        <li>The Millennium Calendar</li>
+                    </ul>
+                        <h3>Instants</h3>
+                    <ul>
+                        <li>Aetherize</li>
+                        <li>Counterspell</li>
+                        <li>An Offer You Can't Refuse</li>
+                        <li>Essence Capture</li>
+                        <li>Essence Scatter</li>
+                        <li>Fleeting Distraction</li>
+                        <li>Inspiring Call</li>
+                        <li>Snakeskin Veil</li>
+                        <li>Think Twice</li>
+                    </ul>
+                    <h3>Lands</h3>
+                    <ul>
+                        <li>Command Tower</li>
+                        <li>Evolving Wilds</li>
+                        <li>15x Forest</li>
+                        <li>Rogue's Passage</li>
+                        <li>22x Island</li>
+                        <li>Thronwood Falls</li>
+                    </ul>
                     </div>
                 </div>
             </section>
